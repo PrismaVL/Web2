@@ -1,69 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>website ko </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAPAN DRIFTS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="wrapper">
-        <div id="nav-div">
-            <div id="logo-div">
-                <a href="">
-                    <img src="JAPAN.png">
-                </a>
+    <header>
+        <div class="container"> 
+            <a href="#">  <img src="JAPAN.png" alt="Japan Drifts Logo" class="logo"> </a>
+            <h1>JAPAN DRIFTS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="toggleSidebar('sidebar-brands')">Car Brands</a></li>
+                    <li><a href="#" onclick="toggleSidebar('sidebar-essentials')">Essentials</a></li>
+                    <li><a href="#" onclick="toggleSidebar('sidebar-streetwear')">Streetwear</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="https://4kwallpapers.com/images/wallpapers/toyota-supra-mk4-2880x1800-14566.jpg" alt="Toyota Supra MK4">
+        </section>
+        <section class="categories">
+            <h2 class="ess"> Car Essentials</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <a href="#rims">Rim</a>
+                </div>
+                <div class="category-item">
+                    <a href="#steering-wheel">Steering Wheel</a>
+                </div>       
+                <div class="category-item">
+                    <a href="#Seats">Seats</a>
+                </div>
+                <div class="category-item">
+                    <a href="#Exhaust Pipes">Exhaust Pipes</a>
+                </div>
+                <div class="category-item">
+                    <a href="#Body Kits">Body Kits </a>
+                </div>
             </div>
-            <div id="navlinks-div">
-                <a href="https://www.car.info/en-se/brands?country=JP">Car Brands</a>
-                <a href="https://www.topjdmstore.com/">Car Essential</a>
-                <a href="https://yokaiclothing.com/">Streetwear</a>
-                <a href="https://www.adrianflux.co.uk/blog/2023/03/jdm-cars-faqs/">FAQ</a>
-                <a href="">Menu</a>
+        </section>
+        <section class="featured-products">
+            <h2 class="ess">Featured Brands</h2>
+            <div class="product-list">
+                <div class="product-item" data-info="Nissan Motor Co., Ltd., Japanese industrial corporation that manufactures automobiles, trucks, and buses under the names Nissan and Datsun. The company also designs and manufactures such products as communications satellites, pleasure boats, and machinery. Headquarters are in Tokyo.">
+                    <img src="nissan-removebg-preview.png" alt="Nissan Logo" class="product-logo">
+                    <p>Nissan</p>
+                </div>
+                <div class="product-item" data-info="Toyota is known for its high-quality and dependable vehicles. Toyota cars are reliable, durable, and built to last. From their sturdy engines to their reliable transmissions, Toyota cars offer a high level of quality that can be trusted.">
+                    <img src="toyota.png" alt="Toyota Logo" class="product-logo">
+                    <p>Toyota</p>
+                </div>
+                <div class="product-item" data-info="The Honda we know and love is the product of its founder's dedication to innovation. This world-renowned carmaker produces several popular new models, including CR-V, Pilot, and Odyssey. Its reputation for building durable, efficient, and stylish cars has earned people's trust across the globe.">
+                    <img src="honda-removebg-preview.png" alt="Honda Logo" class="product-logo">
+                    <p>Honda</p>
+                </div>
+            </div>
+        </section> 
+        <section id="FC" class="featured-products">
+            <h2 class="ess">Featured Cars</h2>
+            <div class="product-list">
+                <div class="product-item1" data-info="The Nissan Skyline GT-R R34 is an iconic Japanese sports car known for its performance and styling">
+                    <img src="Skyline-removebg-preview.png" alt="Nissan Skyline GT-R R34" class="product-logo">
+                    <p>Nissan Skyline GT-R R34</p>
+                </div>
+                <div class="product-item1" data-info="The Toyota Supra MK4 is a legendary sports car celebrated for its turbocharged performance and timeless design">
+                    <img src="Supra-removebg-preview.png" alt="Toyota Supra MK4" class="product-logo">
+                    <p>Toyota Supra MK4</p>
+                </div>
+                <div class="product-item1" data-info="The Honda Integra Type R is a high-performance variant of the Honda Integra known for its agile handling and VTEC engine">
+                    <img src="Integra-removebg-preview.png" alt="Honda Integra Type R" class="product-logo">
+                    <p>Honda Integra Type R</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <aside id="sidebar-brands" class="sidebar">
+        <span class="close-button" onclick="toggleSidebar('sidebar-brands')">X</span>
+        <h2>JDM Brands</h2>
+        <ul>
+            <li><a href="#">Toyota</a></li>
+            <li><a href="#">Nissan</a></li>
+            <li><a href="#">Honda</a></li>
+            <li><a href="#">Mazda</a></li>
+            <li><a href="#">Subaru</a></li>
+            <li><a href="#">Mitsubishi</a></li>
+            <li><a href="#">Suzuki</a></li>
+            <li><a href="#">TRD</a></li>
+            <li><a href="#">Nismo</a></li>
+            <li><a href="#">Mugen</a></li>
+            <li><a href="#">Lexus</a></li>
+            <li><a href="#">Acura</a></li>
+            <li><a href="#">Infiniti</a></li>
+            <li><a href="#">Daihatsu</a></li>
+            <li><a href="#">Isuzu</a></li>
+        </ul>
+    </aside>
+    <aside id="sidebar-essentials" class="sidebar">
+        <span class="close-button" onclick="toggleSidebar('sidebar-essentials')">X</span>
+        <h2>Car Essentials</h2>
+        <ul>
+            <li><a href="#">Rim</a></li>
+            <li><a href="#">Steering Wheel</a></li>
+            <li><a href="#">Seats</a></li>
+            <li><a href="#">Exhaust Pipes</a></li>
+            <li><a href="#">Body Kits</a></li>
+            <li><a href="#">Spoilers</a></li>
+            <li><a href="#">Turbochargers</a></li>
+            <li><a href="#">Intercoolers</a></li>
+            <li><a href="#">Air Filters</a></li>
+            <li><a href="#">Oil Filters</a></li>
+            <li><a href="#">Spark Plugs</a></li>
+            <li><a href="#">Suspension Kits</a></li>
+            <li><a href="#">Brakes</a></li>
+            <li><a href="#">Mirrors</a></li>
+            <li><a href="#">Lights</a></li>
+        </ul>
+    </aside>
+    <aside id="sidebar-streetwear" class="sidebar">
+        <span class="close-button" onclick="toggleSidebar('sidebar-streetwear')">X</span>
+        <h2>Streetwear</h2>
+        <div class="clothing-options">
+            <h3>Male</h3>
+            <ul>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Shirt</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Hat</a></li>
+                <li><a href="#">Glasses</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+        <div class="clothing-options">
+            <h3>Female</h3>
+            <ul>
+                <li><a href="#">Skirts</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Hats</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+        <div class="clothing-options">
+            <h3>Other</h3>
+            <ul>
+                <li><a href="#">Unisex Clothing</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Hats</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">Email: 202310398@fit.edu.ph</a></li>
+                    <li><a href="#">Phone: (+63) 966-204</a></li>
+                    <li><a href="#">Address: 69 Curve St., Tokyo, Japan</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>&nbsp&nbsp  &nbsp&nbsp&nbspFollow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
             </div>
         </div>
-        <div id="Sidebar-div">
-            <ul><a href="*" target="_blank">DELIVERY</a></ul>
-            <ul><a href="*" target="_blank">BRANCHES</a></ul>
-            <ul><a href="*" target="_blank">SUPPORT</a></ul></div>
-        <div id="header-div"><img src="https://4kwallpapers.com/images/wallpapers/toyota-supra-mk4-2880x1800-14566.jpg"></div>
-        <div id="intro-div"> In replacement of MK3, Toyota launched the Supra MK4 in 1993 with a more aerodynamic design. The new Supra had been in development for 4 years and was Toyota’s direct answer to the performance rivals offered by Mazda’s RX7 Turbo and Nissan’s 300ZX. </div>
-        <div id="intro-div2"> The MK4’s engine has become quite a legend as it’s offered in both naturally aspirated or twin-turbo forms. The 3-litre straight-six has 4 valves per cylinder, features sequential electronic fuel injection, an aluminum head, and a cast-iron block. The twin-turbo cars were fitted with an all-new 6-speed manual gearbox, whereas the naturally aspirated models had the W58 5 speed unit. Each model was also offered with a 4-speed automatic that featured a manual shift mode.</div>
-        <div id="intro-div3">Toyota used aluminium for the hood, suspension arms, and transmission pans. Compared to the previous model, the MK4 was shorter, lower and wider, and 100kg lighter. Therefore, the car community quickly embraced the MK4 with numerous body tweaks.</div>
-        <div id="main-div">
-          <table>
-            <tr>  
-                <div class="box">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5caed8960cf57d49530e8c60/e9faa37a-f3f0-4e24-8534-e240da18e0a3/art-mg-nissanr34gtrnismoztune05.jpg?format=1500w">
-                </div>
-                <p class="p1">Introduced in 1998 as the successor to the R33, the Nissan Skyline R34 arrived at a time when the automotive landscape was ripe with competition. From its inception, the R34 was destined for greatness, with each aspect meticulously crafted to elevate the driving experience to new heights. At its heart beat the legendary RB26DETT engine, a twin-turbocharged inline-six powerplant revered for its robustness and ability to unleash prodigious amounts of power with the faintest whisper of throttle input.</p> 
-            </tr>
-            <tr> 
-                <div class="box1">
-                    <img src="https://w0.peakpx.com/wallpaper/461/604/HD-wallpaper-honda-s2000-extreme-bodykit-honda-s2000-tuning-cars-full-japan-sports.jpg">
-                </div>  
-                <p class="p1">Introduced in 1999 to commemorate Honda's 50th anniversary, the S2000 was an instant sensation, captivating enthusiasts with its lightweight construction, front-engine, rear-wheel-drive layout, and perfect 50:50 weight distribution. At its heart lay a naturally aspirated 2.0-liter inline-four engine, renowned for its VTEC variable valve timing system and exhilarating redline of 9,000 RPM. With 240 horsepower on tap, the S2000 delivered blistering acceleration and an intoxicating exhaust note that begged to be explored on open roads and winding mountain passes.</p> 
-
-            </tr>
-            <tr>  
-                <div class="box">
-                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/c075bd154149103.633ce01b3f270.jpg">
-                </div>
-                <p class="p1">the Mazda MX-5 Miata is more than just a car; it's a symbol of freedom, adventure, and the pure joy of driving. Whether you're a seasoned enthusiast or a first-time roadster owner, the Miata's timeless appeal and undeniable charm make it a car that's impossible to resist. So, drop the top, hit the open road, and let the MX-5 Miata show you why driving truly matters.</p> 
-
-            </tr>
-            <tr>
-                <div class="box">
-                    <img src="https://i.pinimg.com/736x/80/31/bd/8031bd0a9931c4904e5c76881c35d662.jpg">
-                </div>
-                <p class="p1">When Acura, Honda's luxury division, introduced the NSX in 1990, it wasn't just another supercar—it was a paradigm shift in automotive engineering. The NSX, also known as the Honda NSX in some markets, challenged the status quo with its groundbreaking combination of performance, handling, and everyday usability, setting a new standard for what a supercar could be.</p> 
-                <P class="last"> This website provides you the authentic japanese car you'll ever need. Our purpose is to sell reliable cars, perfect streetwear, and other car essentials for interiors and exteriors that will satisfy your needs and wants. This website shows every japanese car brands that are available to sell and rent. </p>
-            </tr>
-          </table>
-        </div>
-        <div id="footer-div">
-            <img id="imgf" src="JAPAN.png">
-            <p class="h1">Jaymard Licas  &nbsp; &nbsp; janjayjil@gmail.com</p>
-        </div>
-    </div>
+       <div class="fl"><img src="JAPAN.png" alt=""></div> 
+       <p>By Jaymard Licas</p>
+        <p>™ 2024 JAPAN DRIFTS. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleSidebar(sidebarId) {
+            const sidebar = document.getElementById(sidebarId);
+            const isActive = sidebar.classList.contains('active');
+            
+            document.querySelectorAll('.sidebar').forEach(function(sidebar) {
+                sidebar.classList.remove('active');
+            });
+            
+            if (!isActive) {
+                sidebar.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
