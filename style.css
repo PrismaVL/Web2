@@ -437,7 +437,7 @@ footer .footer-columns {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: left; /* Align text to the left for all columns */
+    text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -457,8 +457,8 @@ footer .footer-columns {
     
     .footer-columns {
         flex-direction: column;
-        align-items: center; /* Center-align the columns */
-        text-align: center; /* Center-align the text for smaller screens */
+        align-items: center; 
+        text-align: center;
     }
 
 
