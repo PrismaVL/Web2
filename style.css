@@ -6,6 +6,7 @@ body {
 
 h1 {
     text-decoration: none;
+    text-shadow: 1px 2px rgb(153, 227, 250);
 }
 
 header {
@@ -105,6 +106,7 @@ nav ul li:hover {
 
 .categories h2 {
     margin-top: 0;
+    text-shadow: 1px 2px rgb(236, 94, 94);
 }
 
 .category-item a {
@@ -135,6 +137,8 @@ nav ul li:hover {
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
     color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(172, 172, 172);
 }
 
 .category-item:hover {
@@ -164,6 +168,8 @@ a:-webkit-any-link {
 .featured-products h2 {
     margin-top: 0;
     color: white;
+    text-shadow: 1px 2px red;
+  
 }
 
 .product-list {
@@ -179,6 +185,7 @@ a:-webkit-any-link {
     margin: 10px;
     border: 2px solid #000000;
     overflow: hidden;
+    box-shadow: 7px 7px 5px lightblue;
 }
 
 .product-item:hover {
@@ -207,6 +214,7 @@ a:-webkit-any-link {
     margin: 10px;
     border: 2px solid #000000;
     overflow: hidden;
+    box-shadow: 7px 7px 7px lightblue;
 }
 
 .product-item1:hover {
@@ -437,7 +445,7 @@ footer .footer-columns {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: left;
+    text-align: left; /* Align text to the left for all columns */
 }
 
 @media (max-width: 768px) {
@@ -457,8 +465,8 @@ footer .footer-columns {
     
     .footer-columns {
         flex-direction: column;
-        align-items: center; 
-        text-align: center;
+        align-items: center; /* Center-align the columns */
+        text-align: center; /* Center-align the text for smaller screens */
     }
 
 
